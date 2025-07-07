@@ -20,8 +20,9 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
 
-    path('dashboard/', include("category.urls")),
-    path('dashboard/', include("notes.urls")),
-    path('dashboard/', include("tasks.urls")),
-    path('dashboard/', include("tags.urls")),
+    path('notepad/', include("category.urls")),
+    path('notepad/', include("notes.urls")),
+    path('notepad/', include("tasks.urls")),
+    path('notepad/', include("tags.urls")),
+    path('notepad/', include("users.urls")),
 ]
